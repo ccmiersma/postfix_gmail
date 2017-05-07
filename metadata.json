@@ -1,0 +1,14 @@
+{
+  "name": "cmiersma-postfix_gmail",
+  "version": "0.1.0",
+  "author": "cmiersma",
+  "summary": "This module configures postfix to use GMail as a relayhost.",
+  "license": "Apache-2.0",
+  "source": "https://github.com/ccmiersma/postfix_gmail.git",
+  "project_page": "https://github.com/ccmiersma/postfix_gmail",
+  "issues_url": "https://github.com/ccmiersma/postfix_gmail/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+
