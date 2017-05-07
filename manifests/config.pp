@@ -5,7 +5,7 @@ class postfix_gmail::config {
     mode => 600,
     owner => root,
     group => root,
-    content => template("postfix/sasl_passwd.erb"),
+    content => template("postfix_gmail/sasl_passwd.erb"),
   }
   
   exec { 'Create password' :
@@ -33,7 +33,7 @@ class postfix_gmail::config {
     owner => root,
     group => root,
     mode => 644,
-    source => "puppet:///modules/postfix/main.cf",
+    source => "puppet:///modules/postfix_gmail/main.cf",
     notify => Service['postfix'],
   }
 
